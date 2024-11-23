@@ -1,8 +1,9 @@
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react'; //import the react module
+import { HashLink } from 'react-router-hash-link'; //import the HashLink component from the react-router-hash-link module
 
-const NavLinks = () => {
+const NavLinks = () => { //Component definition
     return (
+        // Here defines the navigation links we find in the upper right corner of the page
         <>
             <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#about">
                 About
