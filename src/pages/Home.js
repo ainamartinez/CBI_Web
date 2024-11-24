@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
-import Services from '../components/Services';
+import Explore from '../components/Explore';
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         <>
             <Hero />
             <Intro />
-            <Services />
+            <Explore />
             <Portfolio />
             <Clients />
             <Cta/>
