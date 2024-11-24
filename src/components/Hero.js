@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
-import heroImg from '../images/web-dev.svg';
+import { HashLink as Link } from 'react-router-hash-link'; 
+import heroImg from '../images/Water-consumption.png';
 
 const Hero = () => {
     return (
@@ -19,10 +20,11 @@ const Hero = () => {
                             {/* We build digital solutions to help businesses scale */}
                                 You are top 2
                             </h1>
-                            <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">Welcome to metrio x aqua mist, where every responsable usage during your travel counts. Fins more about what rewars are waiting due to a responsible consumption</div>
+                            <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">Welcome to metrio x aqua mist, where every responsable usage during your travel counts. Find more about what rewards are waiting due to a responsible consumption</div>
                             <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                                <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
-                                    rewards
+                                
+                                <Link to="/#services" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
+                                    See more
                                     <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                 </Link>
                                 {/* <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
