@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; // special libraries to handle state and side effects
 import NavLinks from '../Navbar/NavLinks'; // import the NavLinks component, likely contains the navigation links
 import { HashLink } from 'react-router-hash-link'; // component for creating linkts that scroll smoothly to different sections of the page
-
+import waterConsumptionImg from '../../images/logosComb.png'; // Import the image
 
 const NavBar = () => { // dfeine the NavBar component
     const [top, setTop] = useState(!window.scrollY); //Top us a state variable that checks if the user has scrolled to the top of the page
@@ -30,9 +30,14 @@ const NavBar = () => { // dfeine the NavBar component
         */
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
             <div className="flex flex-row justify-between items-center py-2">
-                <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
+                {/* <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
                     <HashLink smooth to="/#hero"><h1 className="font-extrabold text-4xl text-blue-900">LOGO</h1></HashLink>
                     
+                </div> */}
+                <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
+                    <HashLink smooth to="/#hero">
+                        <img src={waterConsumptionImg} alt="Logo" className="h-16 w-auto" />
+                    </HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
                     <button className="p-2 rounded-lg lg:hidden text-blue-900" onClick={handleClick}>
