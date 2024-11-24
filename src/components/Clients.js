@@ -1,5 +1,5 @@
-import React from 'react';
-import kws from '../images/clients/kws.png';
+import React from 'react'; //import the react module
+import kws from '../images/clients/kws.png'; //import the image of the client
 import geps from '../images/clients/geps.png';
 import protergia from '../images/clients/protergia.png';
 

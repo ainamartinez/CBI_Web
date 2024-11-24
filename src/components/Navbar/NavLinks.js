@@ -6,7 +6,7 @@ const NavLinks = () => { //Component definition
         // Here defines the navigation links we find in the upper right corner of the page
         <>
             <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#about">
-                About
+                Water Consumption 
             </HashLink>
             <HashLink className="px-4 font-extrabold text-gray-500 hover:text-blue-900" smooth to="/#services">
                 Services
