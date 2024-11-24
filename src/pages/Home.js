@@ -18,6 +18,7 @@ const Home = () => {
             <Clients />
             <Cta/>
             <Footer />
+            
         </>
 
     )
