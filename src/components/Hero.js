@@ -38,8 +38,11 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="700">
-                            <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={heroImg} />
+                        <iframe src="https://ainamartinez.grafana.net/d-solo/ce4gdqbj0qpkwe/room?orgId=1&timezone=browser&kiosk=&theme=light&panelId=1&__feature.dashboardSceneSolo" width="450" height="200" frameborder="0"></iframe>
                         </div>
+                        {/* <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="700">
+                            <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={heroImg} />
+                        </div> */}
                     </div>
                 </div>
             </div>
