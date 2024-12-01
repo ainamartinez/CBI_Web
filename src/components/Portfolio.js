@@ -49,10 +49,10 @@ const Portfolio = () => {
                         <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-6">
                             <div className="m-2 text-justify text-sm">
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">
-                                    School Management Portal
+                                    Aquamist
                                 </h4>
                                 <p className="text-md font-medium leading-6">
-                                    Our all-encompassing School Management Portal is the only solution needed for any institution. It helps manage administrative tasks, automate processes, and streamline communication between teachers, students, parents, and administrators. 
+                                    We re-design the shower concept ... 
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link
