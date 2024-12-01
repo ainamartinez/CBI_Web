@@ -31,7 +31,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("MLD | Molad e Konsult - Bespoke Web and Mobile Applications");
+  useDocTitle("CBI | Metrio x Aqua Mist");
 
   return (
     <>

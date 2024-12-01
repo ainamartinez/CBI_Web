@@ -1,9 +1,10 @@
 import React from 'react'; //import the react module
 //import Aigures from '../images/colaborators/'
 //este es problema:
-import kws from '../images/clients/kws.png'; //import the image of the client
-import geps from '../images/clients/geps.png';
-import protergia from '../images/clients/protergia.png';
+import aigues from '../images/clients/aigues.png'; //import the image of the client
+import cbi from '../images/clients/cbi.png';
+import gremi from '../images/clients/gremi.png';
+import indescat from '../images/clients/indescat.png';
 
 const clientImage = {
     height: '10rem',
@@ -24,19 +25,22 @@ const Clients = () => {
                     </div>
 
                 <div className="p-16" data-aos="fade-in" data-aos-delay="600">
-                    <div className="grid sm:grid-cols-3 lg:grid-cols-3">
+                    <div className="grid sm:grid-cols-4 lg:grid-cols-4">
                         <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100 w-1/6">
-                            <img src={kws} alt="client" />                           
+                            <img src={aigues} alt="client" />                           
                         </div>
 
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={protergia} alt="client" />                            
+                            <img src={gremi} alt="client" />                            
                         </div> 
 
                         <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
-                            <img src={geps} alt="client" />                            
+                            <img src={cbi} alt="client" />                            
                         </div>
 
+                        <div style={clientImage} className="overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-50 hover:opacity-100">
+                            <img src={indescat} alt="client" />                            
+                        </div>
                                            
                     </div>
                 </div>
