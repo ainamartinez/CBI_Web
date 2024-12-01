@@ -7,7 +7,7 @@ import gremi from '../images/clients/gremi.png';
 import indescat from '../images/clients/indescat.png';
 
 const clientImage = {
-    height: '10rem',
+    height: '9rem',
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }

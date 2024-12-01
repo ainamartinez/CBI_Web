@@ -1,7 +1,7 @@
 import React from 'react';
-import img from '../images/web.svg'; 
-import img2 from '../images/app.svg';
-import img3 from '../images/hosting.svg';
+import img from '../images/stats.svg'; 
+import img2 from '../images/advice.svg';
+import img3 from '../images/awards.svg';
 import img4 from '../images/consultation.svg';
 
 const Explore = () => {
@@ -21,16 +21,16 @@ const Explore = () => {
             </div>
     
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-5 group">
-                        <div className="m-2 text-justify text-sm">
+                        <div className="m-2 text-justify text-sm ">
                             <img
                                 alt="card img"
-                                className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                                className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                                 src={img}
                             />
                             <h2 className="font-semibold my-4 text-2xl text-center">See your stats</h2>
-                            <p className="text-md font-medium">View your consumption data</p>
+                            <p className="text-center font-medium">View your consumption data during a timeline</p>
                         </div>
                     </div>
     
@@ -38,7 +38,7 @@ const Explore = () => {
                         <div className="m-2 text-justify text-sm">
                             <img
                                 alt="card img"
-                                className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                                className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                                 src={img2}
                             />
                             <h2 className="font-semibold my-4 text-2xl text-center">Want some advice?</h2>
@@ -52,7 +52,7 @@ const Explore = () => {
                         <div className="m-2 text-justify text-sm">
                             <img
                                 alt="card img"
-                                className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                                className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                                 src={img3}
                             />
                             <h2 className="font-semibold my-4 text-2xl text-center">Rewards</h2>
