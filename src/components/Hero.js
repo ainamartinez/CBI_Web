@@ -2,7 +2,6 @@ import React from 'react';
 //import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
 import { HashLink as Link } from 'react-router-hash-link'; 
-import heroImg from '../images/Water-consumption.png';
 
 const Hero = () => {
     

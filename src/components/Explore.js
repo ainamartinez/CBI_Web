@@ -2,7 +2,6 @@ import React from 'react';
 import img from '../images/stats.svg'; 
 import img2 from '../images/advice.svg';
 import img3 from '../images/awards.svg';
-import img4 from '../images/consultation.svg';
 
 const Explore = () => {
 
@@ -42,7 +41,7 @@ const Explore = () => {
                                 src={img2}
                             />
                             <h2 className="font-semibold my-4 text-2xl text-center">Want some advice?</h2>
-                            <p className="text-md font-medium">
+                            <p className="text-center font-medium">
                                 Want to improve your water consumption? Here you will find some tips.
                             </p>
                         </div>
@@ -56,7 +55,7 @@ const Explore = () => {
                                 src={img3}
                             />
                             <h2 className="font-semibold my-4 text-2xl text-center">Rewards</h2>
-                            <p className="text-md font-medium">
+                            <p className="text-center font-medium">
                                 Discounts? Free breakfast at our hotels? Spa day? By having responsible water consumption, you can access these rewards and many more.
                             </p>
                         </div>
