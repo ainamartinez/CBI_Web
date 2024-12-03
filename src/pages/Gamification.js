@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NavBar from './Navbar/NavBar';
-import Footer from './Navbar/Footer';
-import {useDocTitle} from './CustomHook';
+import NavBar from '../components/Navbar/NavBar';
+import Footer from '../components/Footer';
+import {useDocTitle} from '../components/CustomHook';
 import axios from 'axios';
 import level1img from '../images/lvl1img.svg';
 import level2img from '../images/lvl2img.svg';
@@ -10,7 +10,7 @@ import level4img from '../images/lvl4img.svg';
 // import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
-const Gaimification = (props) => {
+const Gamification = (props) => {
 
     useDocTitle('CBI | Course Based in Innovation - Demo our products')
 
@@ -19,7 +19,7 @@ const Gaimification = (props) => {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
-    const [Gaimifications, setGaimifications ] = useState([])
+    const [Gamifications, setGamifications ] = useState([])
     const [errors, setErrors] = useState([])
 
 
@@ -28,11 +28,11 @@ const Gaimification = (props) => {
         const checked = e.target.checked
         errors.products = []
         if(checked) {
-            setGaimifications([
-                ...Gaimifications, value
+            setGamifications([
+                ...Gamifications, value
             ])
         } else {
-            setGaimifications(Gaimifications.filter( (e) => (e !== value )))
+            setGamifications(Gamifications.filter( (e) => (e !== value )))
         }
        
     }
@@ -97,7 +97,7 @@ const Gaimification = (props) => {
         fData.append('email', email)
         fData.append('phone_number', phone)
         fData.append('message', message)
-        fData.append('products', Gaimifications)
+        fData.append('products', Gamifications)
 
         // emailjs.sendForm('service_7uy4ojg', 'template_et9wvdg', e.target, 'user_uE0bSPGbhRTmAF3I2fd3s')
         //   .then((result) => {
@@ -263,4 +263,4 @@ const Gaimification = (props) => {
       
 }
 
-export default Gaimification;
+export default Gamification;

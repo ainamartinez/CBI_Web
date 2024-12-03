@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from '../images/stats.svg'; 
 import img2 from '../images/advice.svg';
 import img3 from '../images/awards.svg';
@@ -22,15 +23,17 @@ const Explore = () => {
             <div className="px-12" data-aos="fade-down" data-aos-delay="600">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-5 group">
-                        <div className="m-2 text-justify text-sm ">
-                            <img
-                                alt="card img"
-                                className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                                src={img}
-                            />
-                            <h2 className="font-semibold my-4 text-2xl text-center">See your stats</h2>
-                            <p className="text-center font-medium">View your consumption data during a timeline</p>
-                        </div>
+                        <Link to="/stats" className="block">
+                            <div className="m-2 text-justify text-sm ">
+                                <img
+                                    alt="card img"
+                                    className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                                    src={img}
+                                />
+                                <h2 className="font-semibold my-4 text-2xl text-center">See your stats</h2>
+                                <p className="text-center font-medium">View your consumption data during a timeline</p>
+                            </div>
+                        </Link>
                     </div>
     
                     <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-5 group">
@@ -40,25 +43,27 @@ const Explore = () => {
                                 className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                                 src={img2}
                             />
-                            <h2 className="font-semibold my-4 text-2xl text-center">Want some advice?</h2>
+                            <h2 className="font-semibold my-4 text-2xl text-center">Make the change</h2>
                             <p className="text-center font-medium">
-                                Want to improve your water consumption? Here you will find some tips.
+                            Discover your patterns, identify your water consumption peaks, and turn those peaks into moments of water responsibility.
                             </p>
                         </div>
                     </div>
     
                     <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-5 group">
-                        <div className="m-2 text-justify text-sm">
-                            <img
-                                alt="card img"
-                                className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
-                                src={img3}
-                            />
-                            <h2 className="font-semibold my-4 text-2xl text-center">Rewards</h2>
-                            <p className="text-center font-medium">
-                                Discounts? Free breakfast at our hotels? Spa day? By having responsible water consumption, you can access these rewards and many more.
-                            </p>
-                        </div>
+                        <Link to="/gamification" className="block">
+                            <div className="m-2 text-justify text-sm">
+                                <img
+                                    alt="card img"
+                                    className="w-1/2 mx-auto rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
+                                    src={img3}
+                                />
+                                <h2 className="font-semibold my-4 text-2xl text-center">Rewards</h2>
+                                <p className="text-center font-medium">
+                                    Discounts? Free breakfast at our hotels? Spa day? By having responsible water consumption, you can access these rewards and many more.
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

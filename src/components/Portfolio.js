@@ -19,12 +19,12 @@ const Portfolio = () => {
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">
                                     Metrio
                                 </h4>
-                                <p className="text-md font-medium leading-6">
-                                    Our solution addresses the challenge of water scarcity in Barcelona's hospitality sector by combining innovative technology and user engagement. Through smart water meters and an interactive web/app, we enable real-time monitoring and personalized insights into water consumption. Hotels benefit from detailed dashboards to optimize usage and costs, while guests are encouraged to save water through gamified incentives and accessible sustainability tips. This dual approach not only promotes resource efficiency but also enhances the guest experience and strengthens the brand value of participating hotels
+                                <p className="text-lg font-medium leading-6">
+                                    We provide hotels gain detailed information to optimize water usage and costs, while we encourage guests to reduce their consumption by getting their own consumption and are engaged through gamified incentives.
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link
-                                        to="/get-demo"
+                                        to="/gamification"
                                         className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                                     >
                                         Schedule Demo
@@ -51,12 +51,12 @@ const Portfolio = () => {
                                 <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">
                                     Aquamist
                                 </h4>
-                                <p className="text-md font-medium leading-6">
-                                    We re-design the shower concept ... 
+                                <p className="text-lg font-medium leading-6">
+                                    We empower your gym to save water responsibly while providing a spa-like experience to members with Aqua Mist Shower’s Rain and Mist modes. Aqua Mist— Spa-Like Showers, Smarter Savings
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link
-                                        to="/get-demo"
+                                        to="/gamification"
                                         className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl"
                                     >
                                         Schedule Demo
