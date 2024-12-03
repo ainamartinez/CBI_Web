@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import NavBar from '../components/Navbar/NavBar';
-import Footer from '../components/Footer';
-import {useDocTitle} from '../components/CustomHook';
+import NavBar from './Navbar/NavBar';
+import Footer from './Navbar/Footer';
+import {useDocTitle} from './CustomHook';
 import axios from 'axios';
+import level1img from '../images/lvl1img.svg';
+import level2img from '../images/lvl2img.svg';
+import level3img from '../images/lvl3img.svg';
+import level4img from '../images/lvl4img.svg';
 // import emailjs from 'emailjs-com';
 import Notiflix from 'notiflix';
 
-const DemoProduct = (props) => {
+const Gaimification = (props) => {
 
     useDocTitle('CBI | Course Based in Innovation - Demo our products')
 
@@ -15,7 +19,7 @@ const DemoProduct = (props) => {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
-    const [demoProducts, setDemoProducts ] = useState([])
+    const [Gaimifications, setGaimifications ] = useState([])
     const [errors, setErrors] = useState([])
 
 
@@ -24,11 +28,11 @@ const DemoProduct = (props) => {
         const checked = e.target.checked
         errors.products = []
         if(checked) {
-            setDemoProducts([
-                ...demoProducts, value
+            setGaimifications([
+                ...Gaimifications, value
             ])
         } else {
-            setDemoProducts(demoProducts.filter( (e) => (e !== value )))
+            setGaimifications(Gaimifications.filter( (e) => (e !== value )))
         }
        
     }
@@ -49,23 +53,35 @@ const DemoProduct = (props) => {
           badge: 'Level 1',
           icon: <i className="fas fa-trophy text-yellow-500"></i>,
           rewardName: 'Eco Water Bottle',
-          requirements: 'Save 20 liters of water',
+          rewardImage: level1img,
+          requirements: 'Be between 11-20 in the leaderboard',
           status: 'unlocked', // unlocked, current, or locked
         },
         {
           id: 2,
           badge: 'Level 2',
           icon: <i className="fas fa-medal text-blue-500"></i>,
-          rewardName: 'Reusable Bag',
-          requirements: 'Save 50 liters of water',
+          rewardName: 'Free Cocktail or Juice',
+          rewardImage: level2img,
+          requirements: 'Be between 6-10 in the leaderboard',
           status: 'current',
         },
         {
           id: 3,
           badge: 'Level 3',
           icon: <i className="fas fa-leaf text-green-500"></i>,
-          rewardName: 'Plant a Tree',
-          requirements: 'Save 100 liters of water',
+          rewardName: 'Free breakfast',
+          rewardImage: level3img,
+          requirements: 'Be in the top 5 in the leaderboard',
+          status: 'locked',
+        },
+        {
+          id: 4,
+          badge: 'Level 4',
+          icon: <i className="fas fa-leaf text-green-500"></i>,
+          rewardName: '1000 Points on the chain program',
+          rewardImage: level4img,
+          requirements: 'Be top 1 in the leaderboard',
           status: 'locked',
         },
       ];
@@ -81,7 +97,7 @@ const DemoProduct = (props) => {
         fData.append('email', email)
         fData.append('phone_number', phone)
         fData.append('message', message)
-        fData.append('products', demoProducts)
+        fData.append('products', Gaimifications)
 
         // emailjs.sendForm('service_7uy4ojg', 'template_et9wvdg', e.target, 'user_uE0bSPGbhRTmAF3I2fd3s')
         //   .then((result) => {
@@ -177,6 +193,13 @@ const DemoProduct = (props) => {
                             {level.badge}
                           </span>
                           {/* Reward Icon */}
+                            {/* {level.rewardImage && (
+                              <img
+                              src={level.rewardImage}
+                              alt={level.rewardName}
+                              className="w-12 h-12 rounded-full"
+                              />
+                            )} */}
                           <div
                             className={`w-12 h-12 rounded-full flex items-center justify-center ${
                               level.status === 'current' ? 'animate-bounce' : ''
@@ -188,25 +211,45 @@ const DemoProduct = (props) => {
                             {level.icon}
                           </div>
                         </div>
-                        {/* Middle Section */}
-                        <h2 className="text-xl font-bold text-blue-900 mb-2">{level.rewardName}</h2>
-                        <p className="text-gray-700 mb-4">{level.requirements}</p>
-                        {/* Unlock Status */}
-                        <span
-                          className={`text-sm font-bold py-1 px-3 rounded-lg ${
-                            level.status === 'unlocked'
-                              ? 'text-green-700 bg-green-200'
-                              : level.status === 'locked'
-                              ? 'text-gray-700 bg-gray-200'
-                              : 'text-blue-700 bg-blue-200'
-                          }`}
-                        >
-                          {level.status === 'unlocked'
-                            ? '✔ Unlocked'
-                            : level.status === 'locked'
-                            ? '🔒 Locked'
-                            : 'Current Level'}
-                        </span>
+
+                        <div>
+                          <div className="flex justify-between mb-4">
+                            <div className="w-3/4 pr-2">
+                              {/* Middle Section */}
+                              <h2 className="text-xl font-bold text-blue-900 mb-2">{level.rewardName}</h2>
+                              <p className="text-gray-700 mb-4">{level.requirements}</p>
+                              {/* Unlock Status */}
+                              <span
+                                className={`text-sm font-bold py-1 px-3 rounded-lg ${
+                                level.status === 'unlocked'
+                                  ? 'text-green-700 bg-green-200'
+                                  : level.status === 'locked'
+                                  ? 'text-gray-700 bg-gray-200'
+                                  : 'text-blue-700 bg-blue-200'
+                                }`}
+                              >
+                              {level.status === 'unlocked'
+                                ? '✔ Unlocked'
+                                : level.status === 'locked'
+                                ? '🔒 Locked'
+                                : 'Current Level'}
+                              </span>
+                            </div>
+                            
+                            <div className="w-full pl-2 flex justify-end items-end">
+                              {/* Right Part */}
+                              {/* Reward Icon */}
+                              {level.rewardImage && (
+                                <img
+                                src={level.rewardImage}
+                                alt={level.rewardName}
+                                className="w-20 h-20"
+                                />
+                              )}
+                            </div>
+                          </div>
+                          
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -220,4 +263,4 @@ const DemoProduct = (props) => {
       
 }
 
-export default DemoProduct;
+export default Gaimification;

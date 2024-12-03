@@ -10,7 +10,7 @@ import {
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import DemoProduct from './pages/DemoProduct';
+import Gaimification from './pages/Gaimification';
 import Stats from './pages/Stats';
 
 import {useDocTitle} from './components/CustomHook';
@@ -41,7 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/stats" element={<Stats />} /> 
             <Route path="/contact" element={<Contact />} />
-            <Route path="/get-demo" element={<DemoProduct />} /> 
+            <Route path="/get-demo" element={<Gaimification />} /> 
           </Routes>
         </ScrollToTop>
       </Router>

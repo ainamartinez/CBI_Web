@@ -18,7 +18,7 @@ const Hero = () => {
                         <div className="lg:w-1/2 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
                             <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
                             {/* We build digital solutions to help businesses scale */}
-                                You are top 2
+                                You are top 6
                             </h1>
                             <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">Welcome to metrio x aqua mist, where every responsable usage during your travel counts. Find more about what rewards are waiting due to a responsible consumption</div>
                             <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
